@@ -58,7 +58,7 @@ m_coast('patch','w','linewidth',0.5);
 m_grid('linestyle','none','ytick',[25:5:35],'xtick',[-70:5:-60]);
 
 caxis([0 1e-05])
-m_scatter(lon_fsle(fsle<-0.125),lat_fsle(fsle<-0.125),2,'k','filled');
+m_contour(lon_fsle,lat_fsle,fsle,[-0.2 -0.175 -0.15 -0.125],'color','k')
 load('fig6_float1.mat');
 m_scatter(float_lon,float_lat,50,'pentagram','m','filled');
 LA=axis;
@@ -114,7 +114,7 @@ m_coast('patch','k','linewidth',0.5);
 m_grid('linestyle','none','ytick',[35:5:45],'xtick',[155:5:165]);
 colormap(nclCM(38));
 caxis([0 1e-05])
-m_scatter(lon_fsle(fsle<-0.125),lat_fsle(fsle<-0.125),2,'k','filled');
+m_contour(lon_fsle,lat_fsle,fsle,[-0.6 -0.3 -0.2 -0.125],'color','k')
 
 load('fig6_float2.mat');
 m_scatter(float_lon(138:150),float_lat(138:150),50,'pentagram','m','filled');
