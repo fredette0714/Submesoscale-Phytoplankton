@@ -58,7 +58,7 @@ m_coast('patch','w','linewidth',0.5);
 m_grid('linestyle','none','ytick',[25:5:35],'xtick',[-70:5:-60]);
 
 caxis([0 1e-05])
-m_scatter(lon_fsle(fsle<-0.1),lat_fsle(fsle<-0.1),3,'k','filled');
+m_scatter(lon_fsle(fsle<-0.125),lat_fsle(fsle<-0.125),2,'k','filled');
 load('fig6_float1.mat');
 m_scatter(float_lon,float_lat,50,'pentagram','m','filled');
 LA=axis;
@@ -108,13 +108,14 @@ h1 = axes('position',[.05 0.2 .225 .2]);%% 定义子图1的左下角位置和长
 m_proj('miller','lat',[35 45],'long',[155 165],'direction','vertical','aspect',.5);
 
 
-m_pcolor(lon,lat,sg_mean(:,:,240)'); %20190828
+m_pcolor(lon,lat,sg_mean'); %20190828
 hold on
 m_coast('patch','k','linewidth',0.5);
 m_grid('linestyle','none','ytick',[35:5:45],'xtick',[155:5:165]);
 colormap(nclCM(38));
 caxis([0 1e-05])
-m_scatter(lon_fsle(fsle<-0.1),lat_fsle(fsle<-0.1),3,'k','filled');
+m_scatter(lon_fsle(fsle<-0.125),lat_fsle(fsle<-0.125),2,'k','filled');
+
 load('fig6_float2.mat');
 m_scatter(float_lon(138:150),float_lat(138:150),50,'pentagram','m','filled');
 LA=axis;
