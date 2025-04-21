@@ -1,6 +1,6 @@
 # Submesoscale-Phytoplankton
 
-This repository contains the MATLAB (R2023b) codes (*.m files) and the figure source data (.mat files) for the paper "The Increase in Phytoplanktonic Chlorophyll Induced by Submesoscale Processes is Mostly Due to Physiological Adjustments".
+This repository contains the MATLAB (R2023b) codes (*.m files) and the figure source data (.mat files) for the paper "Heterogeneity of Phytoplankton Response to Submesoscale Processes in the Global Ocean".
 
 'figS7.mat' is too large to upload. Users can compute these climatological values or contact us for achieving this dataset.
 
